@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Weather Dashboard</title>
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Weather Tracker</h2>
+
+  <div class="input-group">
+    <input type="text" id="city-input" placeholder="Enter city (e.g., Puducherry)" value="Puducherry" />
+    <button id="fetch-btn" class="btn">Search</button>
+  </div>
+
+  <div id="weather-display" style="display: none; margin-top: 16px;">
+    <h3 id="city-name">--</h3>
+    <div class="temp" id="temperature">--°C</div>
+    <p id="condition">--</p>
+    <p class="status">Humidity: <span id="humidity">--</span>%</p>
+  </div>
+
+  <p id="msg-status" class="status" style="margin-top: 16px;"></p>
+</div>
+
+<!-- Link external JavaScript file -->
+<script src="app.js"></script>
+</body>
+</html>
